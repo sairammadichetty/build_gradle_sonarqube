@@ -5,15 +5,17 @@ name: default
 
 steps:
 
-- name: build
-  image: gradle
-  commands:
-    - "gradle build "
+
     
 - name: code-analysis
   image: aosapps/drone-sonar-plugin
   commands:
     - "./gradlew -Dsonar.host.url=http://myhost:9000 sonarqube"
+  
+  - name: build
+  image: gradle
+  commands:
+    - "gradle build "
   
   settings:
     sonar_host:
