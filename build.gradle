@@ -15,6 +15,8 @@ sonarqube {
     }
 }
 
+apply from: "$project.rootDir/sonar.gradle"
+
 group = 'com.jhooq'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '1.8'
