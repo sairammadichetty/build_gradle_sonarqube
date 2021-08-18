@@ -12,8 +12,7 @@ steps:
     
 - name: code-analysis
   image: aosapps/drone-sonar-plugin
-  commands:
-    - ./gradlew -Dsonar.host.url=http://http://34.125.108.126:9000 sonarqube
+  
   settings:
     sonar_host:
       from_secret: sonar_host
