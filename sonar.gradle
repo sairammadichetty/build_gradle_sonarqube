@@ -1,0 +1,12 @@
+apply plugin: "org.sonarqube"
+sonarqube {
+   properties {
+      property 'sonar.projectName', 'gradle-multimodule'
+      property "sonar.projectKey", "gradle-multimodule"
+      // Add other analysis parameters here if you don't
+      // want to add it to the Sonar scanner command line:
+      // property "sonar.host.url", "yoursonarqubeurl"
+      // property "sonar.login", "yourlogintoken"
+      // etc.
+  }
+}
