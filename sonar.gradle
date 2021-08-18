@@ -1,12 +1,12 @@
 apply plugin: "org.sonarqube"
 sonarqube {
    properties {
-      property 'sonar.projectName', 'gradle-multimodule'
-      property "sonar.projectKey", "gradle-multimodule"
+      property 'sonar.projectName', 'Example of SonarQube Scanner for Gradle Usage (multimodule with Jacoco code coverage)'
+      property "sonar.projectKey", "org.sonarqube.gradle-multi-module-jacoco"
       // Add other analysis parameters here if you don't
       // want to add it to the Sonar scanner command line:
       property "sonar.host.url", "http://34.125.108.126:9000"
-      property "sonar.login", "admin"
+      property "sonar.login", "Devops@123"
       // etc.
   }
 }
