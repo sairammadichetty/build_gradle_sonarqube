@@ -12,7 +12,7 @@ steps:
   commands:
     - "./gradlew -Dsonar.host.url=http://myhost:9000 sonarqube"
   
-  - name: build
+- name: build
   image: gradle
   commands:
     - "gradle build "
